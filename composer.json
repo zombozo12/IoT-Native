@@ -1,0 +1,5 @@
+{
+    "require": {
+        "rcastera/session": "^1.0"
+    }
+}

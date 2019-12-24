@@ -1,0 +1,59 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "1fd979bda2295745eeb345509cb5dea5",
+    "packages": [
+        {
+            "name": "rcastera/session",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rcastera/Session-Class.git",
+                "reference": "78b7d3f82e2a51d40023001df1dc86a77f942ebd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rcastera/Session-Class/zipball/78b7d3f82e2a51d40023001df1dc86a77f942ebd",
+                "reference": "78b7d3f82e2a51d40023001df1dc86a77f942ebd",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "rcastera\\Browser\\Session": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Richard Castera",
+                    "email": "richard.castera@gmail.com"
+                }
+            ],
+            "description": "Session Class",
+            "homepage": "http://www.richardcastera.com",
+            "keywords": [
+                "php",
+                "session"
+            ],
+            "time": "2014-12-24T15:16:29+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
