@@ -83,9 +83,37 @@ if (!$sessionHandler->isRegistered()) {
                                                 <td><?= $no++; ?></td>
                                                 <td><?= $data['nama']; ?></td>
                                                 <td><?= $data['alamat']; ?></td>
-                                                <td><img src="/files/foto/<?= $data['foto']; ?>" style="width: 50%; height: 50%;"/></td>
-                                                <td><img src="/files/kk/<?= $data['kk']; ?>" style="width: 50%; height: 50%;"/></td>
-                                                <td><img src="/files/ktp/<?= $data['ktp']; ?>" style="width: 50%; height: 50%;"/></td>
+                                                <?php
+                                                    if(empty($data['foto'])){
+                                                        ?>
+                                                <td></td>
+                                                <?php
+                                                }else{
+                                                    ?>
+                                                    <td><img src="/files/foto/<?= $data['foto']; ?>" style="width: 50%; height: 50%;"/></td>
+                                                    <?php
+                                                }
+
+                                                if(empty($data['kk'])){
+                                                    ?>
+                                                    <td></td>
+                                                    <?php
+                                                }else{
+                                                    ?>
+                                                    <td><img src="/files/kk/<?= $data['kk']; ?>" style="width: 50%; height: 50%;"/></td>
+                                                    <?php
+                                                }
+
+                                                if(empty($data['ktp'])){
+                                                    ?>
+                                                    <td></td>
+                                                    <?php
+                                                }else{
+                                                    ?>
+                                                    <td><img src="/files/ktp/<?= $data['ktp']; ?>" style="width: 50%; height: 50%;"/></td>
+                                                    <?php
+                                                }
+                                                ?>
                                                 <td><?= $data['jenisalat']; ?></td>
                                                 <td>
                                                     <a href="/peminjaman-edit.php?id=<?= $data['id'] ?>"

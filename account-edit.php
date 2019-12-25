@@ -31,9 +31,15 @@ use session\session;
 $sessionHandler = new session();
 $initDb = connection::initDatabase();
 
+$role = $sessionHandler->get('usr_role');
 
 if (!$sessionHandler->isRegistered()) {
     header('Location: login.php');
+    return;
+}
+
+if(!$role){
+    header('Location: index.php');
     return;
 }
 

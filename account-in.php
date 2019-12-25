@@ -37,6 +37,12 @@ if (!$sessionHandler->isRegistered()) {
     return;
 }
 
+$role = $sessionHandler->get('usr_role');
+if(!$role){
+    header('Location: index.php');
+    return;
+}
+
 ?>
 <div class="body-wrapper">
     <!-- partial:partials/sidebar.php -->

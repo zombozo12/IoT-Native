@@ -37,6 +37,12 @@ if (!$sessionHandler->isRegistered()) {
     return;
 }
 
+$role = $sessionHandler->get('usr_role');
+if(!$role){
+    header('Location: index.php');
+    return;
+}
+
 ?>
 <div class="body-wrapper">
     <!-- partial:partials/sidebar.php -->
@@ -84,8 +90,28 @@ if (!$sessionHandler->isRegistered()) {
                                                 <td><?= $data['username']; ?></td>
                                                 <td><?= $data['email']; ?></td>
                                                 <td><?= $data['alamat']; ?></td>
-                                                <td><img src="/files/foto/<?= $data['foto']; ?>" style="width: 50%; height: 50%;"/></td>
-                                                <td><img src="/files/ktp/<?= $data['ktp']; ?>" style="width: 50%; height: 50%;"/></td>
+                                                <?php
+                                                    if(empty($data['foto'])){
+                                                        ?>
+                                                        <td></td>
+                                                        <?php
+                                                    }else{
+                                                        ?>
+                                                        <td><img src="/files/foto/<?= $data['foto']; ?>" style="width: 50%; height: 50%;"/></td>
+                                                        <?php
+                                                    }
+
+                                                    if(empty($data['ktp'])){
+                                                        ?>
+                                                        <td></td>
+                                                        <?php
+                                                    }else{
+                                                        ?>
+                                                        <td><img src="/files/ktp/<?= $data['ktp']; ?>" style="width: 50%; height: 50%;"/></td>
+                                                        <?php
+                                                    }
+                                                ?>
+
                                                 <td>
                                                     <a href="/account-edit.php?id=<?= $data['id'] ?>"
                                                        class="mdc-button mdc-button--raised icon-button filled-button--primary"><i
