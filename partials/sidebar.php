@@ -3,6 +3,7 @@ $usr_id       = $sessionHandler->get('usr_id');
 $usr_username = $sessionHandler->get('usr_username');
 $usr_email    = $sessionHandler->get('usr_email');
 $usr_foto     = $sessionHandler->get('usr_foto');
+$usr_role     = $sessionHandler->get('usr_role');
 
 ?>
 <aside class="mdc-drawer mdc-drawer--dismissible mdc-drawer--open">
@@ -66,27 +67,37 @@ $usr_foto     = $sessionHandler->get('usr_foto');
                         </nav>
                     </div>
                 </div>
-                <div class="mdc-list-item mdc-drawer-item">
-                    <a class="mdc-expansion-panel-link" href="#" data-toggle="expansionPanel" data-target="account-menu">
-                        <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">person</i>
-                        Accounts
-                        <i class="mdc-drawer-arrow material-icons">chevron_right</i>
-                    </a>
-                    <div class="mdc-expansion-panel" id="account-menu">
-                        <nav class="mdc-list mdc-drawer-submenu">
-                            <div class="mdc-list-item mdc-drawer-item">
-                                <a class="mdc-drawer-link" href="/account-list.php">
-                                    List
-                                </a>
+                <?php
+                    if(!$usr_role){
+
+                    }else {
+                        ?>
+                        <div class="mdc-list-item mdc-drawer-item">
+                            <a class="mdc-expansion-panel-link" href="#" data-toggle="expansionPanel"
+                               data-target="account-menu">
+                                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon"
+                                   aria-hidden="true">person</i>
+                                Accounts
+                                <i class="mdc-drawer-arrow material-icons">chevron_right</i>
+                            </a>
+                            <div class="mdc-expansion-panel" id="account-menu">
+                                <nav class="mdc-list mdc-drawer-submenu">
+                                    <div class="mdc-list-item mdc-drawer-item">
+                                        <a class="mdc-drawer-link" href="/account-list.php">
+                                            List
+                                        </a>
+                                    </div>
+                                    <div class="mdc-list-item mdc-drawer-item">
+                                        <a class="mdc-drawer-link" href="/account-in.php">
+                                            Tambah User
+                                        </a>
+                                    </div>
+                                </nav>
                             </div>
-                            <div class="mdc-list-item mdc-drawer-item">
-                                <a class="mdc-drawer-link" href="/account-in.php">
-                                    Tambah User
-                                </a>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
+                        </div>
+                        <?php
+                    }
+                ?>
             </nav>
         </div>
     </div>

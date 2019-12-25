@@ -121,7 +121,7 @@ $usrdata = $initDb->getAccountByID($usr_id);
                                                         <div class="mdc-notched-outline__leading"></div>
                                                         <div class="mdc-notched-outline__notch">
                                                             <label for="text-field-hero-input"
-                                                                   class="mdc-floating-label">Foto Peminjam</label>
+                                                                   class="mdc-floating-label">Foto Akun</label>
                                                         </div>
                                                         <div class="mdc-notched-outline__trailing"></div>
                                                     </div>
@@ -136,7 +136,7 @@ $usrdata = $initDb->getAccountByID($usr_id);
                                                         <div class="mdc-notched-outline__leading"></div>
                                                         <div class="mdc-notched-outline__notch">
                                                             <label for="text-field-hero-input"
-                                                                   class="mdc-floating-label">Power AC</label>
+                                                                   class="mdc-floating-label">Foto KTP</label>
                                                         </div>
                                                         <div class="mdc-notched-outline__trailing"></div>
                                                     </div>
