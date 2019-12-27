@@ -60,7 +60,7 @@ if(!$role){
             <main class="content-wrapper">
                 <div class="mdc-layout-grid">
                     <div class="mdc-layout-grid__inner">
-                        <div class="mdc-layout-grid__cell--span-10">
+                        <div class="mdc-layout-grid__cell--span-12">
                             <div class="mdc-card">
                                 <h6 class="card-title card-padding pb-0">Data Account</h6>
                                 <div class="table-responsive">
@@ -97,7 +97,7 @@ if(!$role){
                                                         <?php
                                                     }else{
                                                         ?>
-                                                        <td><img src="/files/foto/<?= $data['foto']; ?>" style="width: 50%; height: 50%;"/></td>
+                                                        <td><img style="display: block;max-width:352px;max-height:240px;width: auto;height: auto;" src="/files/foto/<?= $data['foto']; ?>"/></td>
                                                         <?php
                                                     }
 
@@ -107,7 +107,7 @@ if(!$role){
                                                         <?php
                                                     }else{
                                                         ?>
-                                                        <td><img src="/files/ktp/<?= $data['ktp']; ?>" style="width: 50%; height: 50%;"/></td>
+                                                        <td><img style="display: block;max-width:352px;max-height:240px;width: auto;height: auto;"   src="/files/ktp/<?= $data['ktp']; ?>"/></td>
                                                         <?php
                                                     }
                                                 ?>
