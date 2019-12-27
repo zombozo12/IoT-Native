@@ -68,12 +68,12 @@ if(!$role){
                                         <thead>
                                         <tr>
                                             <th class="text-left">No.</th>
-                                            <th>Username</th>
-                                            <th>Email</th>
-                                            <th>Alamat</th>
-                                            <th>Foto</th>
-                                            <th>Foto KTP</th>
-                                            <th>Action</th>
+                                            <th class="text-left">Username</th>
+                                            <th class="text-left">Email</th>
+                                            <th class="text-left">Alamat</th>
+                                            <th class="text-left">Foto</th>
+                                            <th class="text-left">Foto KTP</th>
+                                            <th class="text-left">Action</th>
                                         </tr>
                                         </thead>
                                         <tbody>

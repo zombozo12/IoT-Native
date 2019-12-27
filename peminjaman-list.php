@@ -62,16 +62,16 @@ if (!$sessionHandler->isRegistered()) {
                                         <thead>
                                         <tr>
                                             <th class="text-left">No.</th>
-                                            <th>Nama</th>
-                                            <th>Alamat</th>
-                                            <th>Foto</th>
-                                            <th>Foto KK</th>
-                                            <th>Foto KTP</th>
-                                            <th>Jenis Alat</th>
-                                            <th>Action</th>
+                                            <th class="text-left">Nama</th>
+                                            <th class="text-left">Alamat</th>
+                                            <th class="text-left">Foto</th>
+                                            <th class="text-left">Foto KK</th>
+                                            <th class="text-left">Foto KTP</th>
+                                            <th class="text-left">Jenis Alat</th>
+                                            <th class="text-left">Action</th>
                                         </tr>
                                         </thead>
-                                        <tbody class="mdc-layout-grid">
+                                        <tbody>
                                         <?php
                                         $usr_id = $sessionHandler->get('usr_id');
                                         $role   = $sessionHandler->get('usr_role');
