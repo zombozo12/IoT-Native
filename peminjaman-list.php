@@ -91,8 +91,11 @@ if (!$sessionHandler->isRegistered()) {
                                                 <?php
                                                 }else{
                                                     ?>
-                                                    <td >
-                                                        <img style="display: block;max-width:352px;max-height:240px;width: auto;height: auto;"  src="/files/foto/<?= $data['foto']; ?>"/></td>
+                                                    <td>
+                                                        <a href="/files/foto/<?= $data['foto']; ?>" target="_blank">
+                                                            <img style="display: block;max-width:352px;max-height:240px;width: auto;height: auto;" src="/files/foto/<?= $data['foto']; ?>"/>
+                                                        </a>
+                                                    </td>
                                                     <?php
                                                 }
 
@@ -103,7 +106,10 @@ if (!$sessionHandler->isRegistered()) {
                                                 }else{
                                                     ?>
                                                     <td>
-                                                        <img style="display: block;max-width:352px;max-height:240px;width: auto;height: auto;" src="/files/kk/<?= $data['kk']; ?>"/></td>
+                                                        <a href="/files/foto/<?= $data['kk']; ?>" target="_blank">
+                                                            <img style="display: block;max-width:352px;max-height:240px;width: auto;height: auto;" src="/files/kk/<?= $data['kk']; ?>"/>
+                                                        </a>
+                                                    </td>
                                                     <?php
                                                 }
 
@@ -113,7 +119,11 @@ if (!$sessionHandler->isRegistered()) {
                                                     <?php
                                                 }else{
                                                     ?>
-                                                    <td><img style="display: block;max-width:352px;max-height:240px;width: auto;height: auto;" src="/files/ktp/<?= $data['ktp']; ?>"/></td>
+                                                    <td>
+                                                        <a href="/files/foto/<?= $data['foto']; ?>" target="_blank">
+                                                            <img style="display: block;max-width:352px;max-height:240px;width: auto;height: auto;" src="/files/ktp/<?= $data['ktp']; ?>"/>
+                                                        </a>
+                                                    </td>
                                                     <?php
                                                 }
                                                 ?>
