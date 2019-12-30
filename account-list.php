@@ -112,7 +112,7 @@ if(!$role){
                                                     }else{
                                                         ?>
                                                         <td>
-                                                            <a href="/files/foto/<?= $data['ktp']; ?>" target="_blank">
+                                                            <a href="/files/ktp/<?= $data['ktp']; ?>" target="_blank">
                                                                 <img style="display: block;max-width:352px;max-height:240px;width: auto;height: auto;" src="/files/ktp/<?= $data['ktp']; ?>"/>
                                                             </a>
                                                         </td>

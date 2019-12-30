@@ -106,7 +106,7 @@ if (!$sessionHandler->isRegistered()) {
                                                 }else{
                                                     ?>
                                                     <td>
-                                                        <a href="/files/foto/<?= $data['kk']; ?>" target="_blank">
+                                                        <a href="/files/kk/<?= $data['kk']; ?>" target="_blank">
                                                             <img style="display: block;max-width:352px;max-height:240px;width: auto;height: auto;" src="/files/kk/<?= $data['kk']; ?>"/>
                                                         </a>
                                                     </td>
@@ -120,7 +120,7 @@ if (!$sessionHandler->isRegistered()) {
                                                 }else{
                                                     ?>
                                                     <td>
-                                                        <a href="/files/foto/<?= $data['foto']; ?>" target="_blank">
+                                                        <a href="/files/ktp/<?= $data['ktp']; ?>" target="_blank">
                                                             <img style="display: block;max-width:352px;max-height:240px;width: auto;height: auto;" src="/files/ktp/<?= $data['ktp']; ?>"/>
                                                         </a>
                                                     </td>
